@@ -12,7 +12,7 @@ git clone https://github.com/mariomka/rust-bundler.git
 cd rust-bundler
 cargo install --path .
 ```
-
+#### Using bundler from crates.io
 ```
 cargo install bundler
 ```
