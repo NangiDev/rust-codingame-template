@@ -12,4 +12,5 @@ fn main() {
     println!(
         "advanced_math::multiply(2,3) = {}",
         advanced_math::multiply(2, 3)
+    );
 }
