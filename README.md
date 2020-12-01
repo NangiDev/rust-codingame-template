@@ -3,6 +3,15 @@ Project for creating a rust codingame base with the cargo-generate crate. https:
 ## Getting started
 
 ### Prerequirements
+The offical [bundler](https://github.com/slava-sh/rust-bundler) crate from [crates.io](https://crates.io/crates/bundler) has some missing support for Rust 2018 keywords. [Solution and pull requst has been provided](https://github.com/slava-sh/rust-bundler/pull/7)
+
+#### Workaround
+Use [Mariomka fork](https://github.com/mariomka/rust-bundler) to manually build the bundler.
+```
+git clone https://github.com/mariomka/rust-bundler.git
+cd rust-bundler
+cargo install --path .
+```
 
 ```
 cargo install bundler
@@ -21,5 +30,5 @@ This will run tests, build bin {{crate_name}}, and generate the singlefile.rs
 ### Manually
 
 ```
-cargo test && cargo build --bin joel-test && bundle . > src/bin/singlefile.rs
+cargo test && cargo build --bin {{crate_name}} && bundle . > output/singlefile.rs
 ```
