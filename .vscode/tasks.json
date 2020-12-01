@@ -4,7 +4,7 @@
     {
       "label": "Build src/bin/singlefile.rs",
       "type": "shell",
-      "command": "cargo build --bin {{project-name}} && cargo test && bundle . > src/bin/singlefile.rs",
+      "command": "cargo build --bin {{project-name}} && cargo test && bundle . > output/singlefile.rs",
       "problemMatcher": [],
       "group": {
         "kind": "build",
