@@ -1,4 +1,4 @@
-use crate::{{crate_name}}::multiply;
+use crate::advanced_math::multiply;
 
 pub fn passthrough_multiply(a: i32, b: i32) -> i32 {
     multiply(a,b)

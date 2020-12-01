@@ -7,6 +7,10 @@ fn addition() {
 }
 
 #[test]
-fn multiply() {
-    assert_eq!(6, add(2, 3), "Testing so that multiplucation is working")
+fn multiplucation() {
+    assert_eq!(
+        6,
+        multiply(2, 3),
+        "Testing so that multiplucation is working"
+    )
 }
